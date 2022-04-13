@@ -1,0 +1,117 @@
+/*
+Colors used:
+background Color (beige):  #F7F6F2;
+text Color (black):   #000000;
+highlights (orange): #F74C25
+*/
+
+
+
+body {background-color:#F7F6F2;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+color: #000000;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 500;
+}
+
+
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+
+header {background-color:#F74C25;
+color: #F7F6F2}
+
+
+img {
+  width: 100%;
+}
+
+
+
+
+
+
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:hover, a:focus {
+  color: #cc6540;
+  text-decoration: none; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #994c30;
+}
+
+.button {
+  display: inline-block;
+  background-color: #F74C25;
+  color: #F7F6F2; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  color: #000000;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #F74C25;
+  border: 2px solid #F74C25;
+}
+
+.button.contact:hover {
+  background-color: #F74C25;
+  color: #F7F6F2;
+}
+
+.header-index {background-color:#F7F6F2;
+color: #F74C25}
+.header-link-index {color: #F74C25}
+.header-link-index:hover {
+  color: #000000;
+}
+
+.highlight {
+    background: linear-gradient(120deg, #F74C25 0%, #F74C25 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 60%;
+    color: #F7F6F2
+}
+
+.header-link {color: #F7F6F2}
+
+.header-link:hover {
+  text-decoration: none;
+  color: #000000;
+}
