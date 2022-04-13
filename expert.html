@@ -5,18 +5,27 @@
   <meta charset="utf-8">
   <title>Expert</title>
   <link href="img/favicon.ico" rel="shortcut icon">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header>
     <div>
-      <a href="index.html">Rebeka Vidali</a>
+      <a class="header-link" href="index.html">Rebeka Vidali</a>
       <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+
+        <a class="header-link" href="index.html" >Work</a>
+        <a class="header-link" href="about.html">About</a>
+        <a class="header-link" href="#contact">Contact</a>
+
       </nav>
     </div>
   </header>
@@ -42,11 +51,11 @@
         <p> Expert is a responsive web app that connects users with home repair professionals by providing a smooth
           home visit booking experience, video calls and support from community. </p>
 
-        <h2> My Process </h2>
 
-        <h3> How it started </h3>
 
-        <h4> Challenge </h4>
+        <h2> How it started </h2>
+
+        <h3> Challenge </h3>
 
         <p> My initial challenge was to create an app for users to contact home repair experts when they need advice
           because they want to reduce their costs with home visits. But the web app was supposed to be designed for
@@ -54,45 +63,45 @@
           advice. During interviews I realized a completely different need immerged: to have a platform to quickly find
           a reliable expert for a home visit. </p>
 
-        <h4> Problem statement </h4>
+        <h3> Problem statement </h3>
 
         <p> Expert users need an efficient way to book home visits from home repair experts when they need help to
           save time and reduce frustration of making several phone calls. </p>
 
-        <h3> Research </h3>
+        <h2> Research </h2>
 
-        <h4> Competitive analysis </h4>
+        <h3> Competitive analysis </h3>
 
         <p> At first, I looked at some of the video call booking websites for home DIY experts like TheOne and DIY Coach,
           later I also analyzed AirBnB and Booking for their booking experience and Mojmojster.si - a local website for
           finding home repairmen.</p>
 
-        <h4> A quick survey </h4>
+        <h3> A quick survey </h3>
         <p> I conducted a survey to collect some preliminary results.
-          Here are the key insights:
+          Here are the key insights:</p>
         <ul>
           <li>Most participants try to fix broken things alone and they google for instructions</li>
           <li>Most participants find experts through word of mouth</li>
           <li>The most common way of contacting the experts is by calling them</li>
           <li>The most important criteria for choosing a home repair expert are recommendations/reviews.</li>
         </ul>
-        </p>
 
-        <h4>User interviews</h4>
+
+        <h3>User interviews</h3>
 
         <p>The user inverviews were done with 3 participants from Slovenia, aged between 26 and 49.
           Their level of experience with home professionals was from ''home repair noob'' to ''I like to do things alone''.</p>
-        <p>Here are the most important insights:
+        <p>Here are the most important insights:</p>
         <ul>
           <li>DIY: Interviewees try to do smaller home repairs alone, for more serious issues they hire a professional.</li>
           <li>IT’S HARD: Finding a professional is very hard in Slovenia since there are few and they can be very unreliable.</li>
           <li>TRUST IS KEY: They like to ask around for contacts as they find references to be the most important thing when hiring an expert.</li>
           <li>GOOD SERVICE: They would rather pay more than receive bad service.</li>
         </ul>
-        </p>
 
-        <h4>Sitemaps</h4>
-        <p>First Sitemap</p>
+
+        <h3>Sitemaps</h3>
+        <h4>First Sitemap</h4>
         <p>The first idea was to make a landing page and have people log in in order to access the dashboard, that
           would then allow them to search for experts and post to the community.</p>
 
@@ -101,7 +110,7 @@
           <img src="img\1st_sitemap@2x.png" alt="First Sitemap">
         </picture>
 
-        <p>Iterated Sitemap</p>
+        <h4>Iterated Sitemap</h4>
         <p>After conducting an open card sort, I realized that it’s better to let users have the opportunity to search for
           an expert or browse community and offer a log in/sign up only when they decide to book or post.</p>
         <picture>
@@ -110,7 +119,7 @@
         </picture>
 
         <h3>User Personas</h3>
-        <p> Based on data gathered from user research,
+        <p>Based on data gathered from user research,
           I’ve created two different user personas - Ina and Matej. To help me empathize with them, I imagined real-life scenarios where they’d use the web app.</p>
         <!--I want to use these images in a carousel-->
 
@@ -135,9 +144,9 @@
         </picture>
 
 
-        <h3>Wireframing</h3>
+        <h2>Wireframing</h2>
 
-        <h4>Low Fidelity</h4>
+        <h3>Low Fidelity</h3>
         <p>The first idea was to have the search on the homepage and the user would pick the time the expert was
           available when they decided to book the home visit.</p>
 
@@ -146,7 +155,7 @@
           <img src="img\low_fi@2x.png" alt="Low Fidelity Wireframe">
         </picture>
 
-        <h4>Mid-Fidelity</h4>
+        <h3>Mid-Fidelity</h3>
         <p>In mid-fidelity version the 4 CTAs on the expert profile page were grouped into ‘‘help online’’ and ‘‘come
           over’’.</p>
 
@@ -155,7 +164,7 @@
           <img src="img\mid_fi@2x.png" alt="Mid-fidelity Wireframe">
         </picture>
 
-        <h4>High Fidelity</h4>
+        <h3>High Fidelity</h3>
         <p>After some quick usability testing of the mid-fidelity flow (3 participants), it became apparent that the
           users didn’t understand what ‘help online’ and ‘come over’ meant, so I reintroduced the 4 CTAs, this time
           with a different set of icons. I also removed search from homepage to avoid cognitive overload and created a
@@ -166,14 +175,14 @@
           <img src="img\high_fi@2x.png" alt="High Fidelity Wireframe">
         </picture>
 
-        <h3>User testing</h3>
+        <h2>User testing</h2>
 
         <p> Expert was tested with 6 moderated tests (1 in-person, 5 remote via Zoom) - 5 via computer, 1 on the tablet.
           Participants were varied, from 19 years old student to a 52-year-old in the military. Although they all have
           different stories, they have one thing in common: they were all Slovenian.</p>
 
         <p>Key insights:</p>
-        <p>
+
         <ul>
           <li>2/6 participants didn’t know how to go to community
             <p> Solution: Change ‘Visit community’ text to ‘Go to community’ and separate the button from the
@@ -193,11 +202,11 @@
             <p>Solution: add an emergency feature, add a phone number to the expert profile</p>
           </li>
         </ul>
-        </p>
 
-        <h3>Refinement</h3>
 
-        <h4>Design System</h4>
+        <h2>Refinement</h2>
+
+        <h3>Design System</h3>
         <p>The solutions were implemented and the high fidelity prototype was slowly starting to see the light of day.
           For quicker building, I developed a design system and used it faithfully throughout the app. Visual design
           was tested by my peers and it went through several iterations.</p>
@@ -208,29 +217,29 @@
         </picture>
 
 
-        <h4>Finishing Touches</h4>
+        <h3>Finishing Touches</h3>
         <p>I also implemented the accessibility features. The web app originally had a light green color palette, which
           was later changed to dark green to comply with WCAG contrast standards. I also added form labels and the
           placeholders were now examples.</p>
 
-        <h3>Final Solution</h3>
+        <h2>Final Solution</h2>
 
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJFAYUhh1nWL8SPxFGMJMYN%2FExpert-prototype%3Fpage-id%3D1205%253A33037%26node-id%3D1205%253A36766%26viewport%3D344%252C48%252C0.16%26scaling%3Dscale-down%26starting-point-node-id%3D1205%253A36766"
           allowfullscreen></iframe>
 
-        <h3>Takeaways</h3>
-        <h4>What Did I Learn?</h4>
+        <h2>Takeaways</h2>
+        <h3>What Did I Learn?</h3>
         <p>This was my first project and, while it was certainly not easy, I had a lot of fun and learned A TON. User
           research and testing thought me to stay open-minded since I never know what I might discover. Mistakes
           will be made and that’s okay. That’s why we test and ask questions in the first place.</p>
 
-        <h4>What's Next?</h4>
+        <h3>What's Next?</h3>
         <p>Expert was inspired by me moving to another country, a bigger city than my little Koper, getting locked out
           of my apartment at 9 p.m. and not knowing a single locksmith to turn to for help. Moving forward I’d like to
           develop the expert side of the web app to improve the booking experience even more.</p>
 
-        <h3>Yay, you made it to the end! Thank you!</h3>
+        <h2>Yay, you made it to the end! Thank you!</h2>
 
       </div>
     </div>
@@ -242,7 +251,7 @@
     <div>
       <h2>Say hi!</h2>
       <div>
-        <a href="mailto:rebeka.vidali1(at)gmail.com">Email me</a>
+          <a href="mailto:rebeka.vidali1(at)gmail.com" class="button contact">Email me</a>
       </div>
 
       <div>
