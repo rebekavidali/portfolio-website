@@ -5,8 +5,10 @@ text Color (black):   #000000;
 highlights (orange): #F74C25
 */
 
-
-
+html {scroll-behavior: smooth;}
+* {
+  box-sizing: border-box;
+}
 body {background-color:#F7F6F2;
 font-family: 'Source Sans Pro', sans-serif;
 font-size: 16px;
@@ -25,6 +27,15 @@ h1 {
   font-weight: 500;
 }
 
+.hero-text
+{color:  #F74C25 }
+
+.highlight {
+    background: linear-gradient(120deg, #F74C25 100%, #F74C25 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 10%;
+    background-position: 0 85%;
+}
 
 
 h2 {
@@ -42,25 +53,31 @@ h4 {
 }
 
 
-header {background-color:#F74C25;
-color: #F7F6F2}
+header {
+background-color:#F74C25;
+color: #F7F6F2;
+text-align: center;
+padding: 10px 0;
+box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.19);
+position: relative;
+width:100%
+}
 
+
+iframe {
+  width: 100%;
+}
 
 img {
   width: 100%;
 }
-
-
-
-
-
 
 a {
   color: #ff7f50;
   text-decoration: none; /* No underlining */
 }
 a:hover, a:focus {
-  color: #cc6540;
+  color: #000000;
   text-decoration: none; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
@@ -69,18 +86,18 @@ a:active { /* selected link */
 
 .button {
   display: inline-block;
-  background-color: #F74C25;
-  color: #F7F6F2; /* needed to override the default link color */
+  background-color: #transparent;
+  color: #F74C25; /* needed to override the default link color */
+  border: 2px solid #F74C25;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
+
 }
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-  color: #000000;
+  background-color: #F74C25;
+  color: #F7F6F2;
 }
 
 .button.contact {
@@ -94,24 +111,53 @@ a:active { /* selected link */
   color: #F7F6F2;
 }
 
-.header-index {background-color:#F7F6F2;
-color: #F74C25}
-.header-link-index {color: #F74C25}
-.header-link-index:hover {
-  color: #000000;
-}
-
-.highlight {
-    background: linear-gradient(120deg, #F74C25 0%, #F74C25 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 0 60%;
-    color: #F7F6F2
-}
 
 .header-link {color: #F7F6F2}
 
 .header-link:hover {
   text-decoration: none;
   color: #000000;
+}
+.icon {
+  width: 35px;
+  height: 35px
+}
+
+/* Layout styling */
+
+
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #F7F6F2;
+}
+
+nav > ul > li > a:hover{
+color: #000000;
+}
+
+nav > ul > li > a:active
+{
+color: #000000;
 }
