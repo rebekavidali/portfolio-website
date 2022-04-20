@@ -29,7 +29,11 @@ h1 {
 }
 
 .hero-text
-{color:  #F74C25 }
+{color:  #F74C25; }
+
+#hero h1 {
+text-align:left; }
+
 
 .highlight {
     background: linear-gradient(120deg, #F74C25 100%, #F74C25 100%);
@@ -72,6 +76,7 @@ footer {
 
 }
 
+
 iframe {
   width: 100%;
 }
@@ -104,25 +109,24 @@ main {
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  transition: 0.2s;
+ transition-timing-function: ease;
 
 }
+
 .button:hover {
   background-color: #F74C25;
   color: #F7F6F2;
+
 }
 
-.button.contact {
-  background-color: transparent;
-  color: #F74C25;
-  border: 2px solid #F74C25;
-}
+.centred {
 
-.button.contact:hover {
-  background-color: #F74C25;
-  color: #F7F6F2;
+margin: 0 auto;
+display: block;
+max-width: 200px;
+text-align: center;
 }
-
 
 .header-link {color: #F7F6F2}
 
@@ -174,6 +178,10 @@ nav > ul > li > a:active
 color: #000000;
 }
 
+.image
+{width: 100%;
+max-width: 100%;
+height: auto;}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -199,9 +207,6 @@ font-size: 18px;
   display: table;
 }
 
-#hero span {
-  display: block;
-}
 
 .col-md-6 {
   width: 50%;
@@ -212,9 +217,22 @@ font-size: 18px;
   padding-left: 10 px;
   padding-right: 10px;
 }
+#expert .row
+{
+  padding-top:50px;
+   padding-bottom: 50px;
+   border-bottom: 1px solid #4a4a4a;
+ }
+
+
+
+#recent_projects h3 { margin-top: 0;}
 
 }
 
+
+
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -231,8 +249,43 @@ width: 42%;
 width: 58%;
 }
 }
+
+
+
 /* ==============================
-X-large devices (1440px or larger)
+ANIMATIONS
 ================================= */
-@media only screen and (min-width: 1440px) {
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
