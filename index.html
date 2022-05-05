@@ -14,28 +14,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/903b077051.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <header>
+  <header class="bg-light">
     <div class="container">
-      <a class="header-link" href="index.html">Rebeka Vidali</a>
+       <div class="navtoggle" id="myNavtoggle">
+      <a class="orange" href="index.html">Rebeka Vidali</a>
       <nav>
         <ul class="navigation">
-          <li> <a href="index.html">Work</a> </li>
-          <li> <a href="about.html">About</a> </li>
-          <li> <a href="#contact">Contact</a> </li>
+              <li>  <a class="orange" href="index.html" >Work</a> </li>
+              <li>  <a class="orange" href="about.html">About</a> </li>
+              <li>  <a class="orange" href="#contact" onclick="menuToggle()">Contact</a> </li>
+              <li>  <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+      </div>
   </header>
 
   <main>
 
     <div class="container">
 
-      <div id="hero"  class="row">
-        <h1> <span class="hero-text"> Hello! </span> <br>
+      <div id="hero">
+
+        <h1 class="orange">  Hello! <br>
           I'm Rebeka Vidali, a UX Designer based in Amsterdam!</h1>
       </div>
 
@@ -1390,7 +1396,7 @@
     </div>
   </footer>
 
-  
+
 <script src="js/scripts.js"></script>
 
 </body>
